@@ -1,0 +1,14 @@
+{
+    "name": "n8n Codespace",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": "."
+    },
+    "forwardPorts": [5678],
+    "remoteEnv": {
+      "N8N_HOST": "0.0.0.0",
+      "N8N_PORT": "5678"
+    },
+    "postCreateCommand": "docker-compose up -d"
+  }
+  
